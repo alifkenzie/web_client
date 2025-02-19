@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "marked": "^15.0.6",
     "page": "^1.11.6",
     "parcel": "^2.13.3",
     "prettier": "^3.4.2"
@@ -9,13 +10,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel --host 0.0.0.0",
+    "dev": "parcel --cert 192.168.235.19.pem --key 192.168.235.19-key.pem", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "process": "^0.11.10"
   }
 }

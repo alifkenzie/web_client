@@ -1,16 +1,14 @@
 const page = require("page");
-const page1 = require("./page1/index")
-const page2 = require("./page2/index")
 // memanggil function page3 dari file yang ada di src/page3/index.js
-const page3 = require("./page3/index")
+const tanya_page = require("./tanya_page/index")
 const mainpage = require("./main_page/index")
+const configpage = require("./configpage/index")
+
 
 
 
 page('/', mainpage)
-page('/page1', page1)
-page('/page2', page2)
 // jika alamat /page3 di buka maka panggil function page3
-page('/page3', page3)
-
+page('/tanya_page', tanya_page)
+page('/configpage',configpage)
 page()
